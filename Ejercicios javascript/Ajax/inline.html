@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="documento.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- primera forma es incluir el código dentro con ----<script> </script> -->
+    <!-- segunda forma es mediante archivo externo con ----<script src="documento.js"></script> -->
+    <!-- 3 sería ya dentro del botón en linea -------------<button type="button" onclick="alert('hola')" >pulsa</button>-->
+</head>
+<body>    <!--Examen-->
+    <style>
+        p{
+            font-size:2em;
+        }
+
+    </style>
+<!-- <script>alert("Hola")</script> -->
+
+<P id="a">Hola buenos días</P>
+
+
+<script>
+
+    function cambiar(){
+        document.getElementById("a").innerHTML="Hola";}
+
+
+</script>
+<button type="button" onclick="cambiar()">Pulsar</button>
+<button type="button" onclick="alert('qué pasa')">aprieta</button>
+
+</body>
+</html>

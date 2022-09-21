@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="documento.js"></script>
+</head>
+
+<body>
+    <script>
+        function abrirVentana() {
+            miVentana = window.open("https://sport.es/", "", "width=400, height=400", "toolbar=no ");
+        }
+        //NO tiene en cuenta dónde está la ventana actual mueve la venta sin contar cómo se encuentra 
+        function mover() {
+            miVentana.moveTo(200, 300);
+
+        }
+        //En este caso sí tiene en cuenta la ventana actual y la mueve en función de cómo esté si estaba en 400 400 será 410 410 
+        function cambiarTam() {
+            miVentana.moveBy(10, 10);
+
+        }
+        // me sirve para enfocar la ventana. 
+        function enfocarVentana() {
+
+            miVentana.focus();
+        }
+        //Función para cerrar la ventana
+        function cerrarVentana() {
+            miVentana.close();
+        }
+    </script>
+
+    <button type="button" onclick="abrirVentana();">Abrir</button>
+    <button type="button" onclick="mover();">Mover</button>
+    <button type="button" onclick="cambiarTam();">Cambiar</button>
+    <button type="button" onclick="enfocarVentana();">Enfocar</button>
+    <button type="button" onclick="cerrarVentana();">Cerrar</button>
+</body>
+
+</html>

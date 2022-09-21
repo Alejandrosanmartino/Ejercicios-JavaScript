@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- itera 4 veces hasta que sea -9 de esta manera como j vale=1 se suma 1+4 veces que entra al bucle -->
+    <script>
+        var j = 1;
+        for (var i = -13; i <= -10; i++) {
+            j++;
+        }
+        document.write(j+"</br>");
+    </script>
+    <script>
+        // la condición es falsa no entra al bucle no es menor estricto que 0 al ser falsa salta al alert
+        var i = 0;
+        var j = 6;
+        while (i < 0) {
+            i++;
+            j++;
+        }
+        document.write(j+"</br>")
+    </script>
+
+    <!-- No entra en el bucle porque se incrementa valdría 9-->
+    <script>
+        var j = 8;
+        var i = -1;
+                do {
+            i++;
+            j++;
+
+        } while (i <= -1)
+        document.write(j)
+        document.write("</br>")
+
+        document.write(i)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+function suma_y_muestra(){
+      var  resultado =numero1+numero2;
+        alert ("El resultado es "+ resultado);}
+// el ambito de las variables sería global 
+//si fueran dentro de la función serían locales
+// si no defines la palabra var dentro de una variable
+// se interpreta como variable global por eso funciona sin la variable resultado
+        var resultado;
+        var numero1=3;
+        var numero2=5;
+        suma_y_muestra();
+
+
+
+    </script>
+</body>
+</html>

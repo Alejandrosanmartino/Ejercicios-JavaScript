@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="documento.js"></script>
+</head>
+
+<body>
+    <script>
+        let propiedades = new Array ("Procesador", "Case", "Tarjeta gráfica", "Monitor");
+        let materiales = ["Ryzen 2700x", "Phanteks p400", "Nvidia 1070", "Lg ultrawide"]
+
+        for (i = 0; i < materiales.length; i++) {
+            document.write(materiales[i] + ": " + propiedades[i] + "</br>")
+        }
+
+        document.write("<hr>");
+
+        var i=0;
+
+        while(i<materiales.length){
+            document.write(materiales[i]+": "+ propiedades[i]+"</br>")
+            i=i+1;
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="Stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="documento.js"></script>
+    <title>Document</title>
+</head>
+
+<body style="font-size: 2em;">
+    <script type="text/javascript">
+        //el generador con devuelve 1 a 1 ponemos function*
+
+        function* rango(desde, hasta) {
+
+            for (let i = desde; i <= hasta; i = i + 1) {
+                yield i;
+            }
+        }
+
+        let numero = rango(5, 15);
+        document.write(numero.next().value +"</br>")
+    </script>
+
+</body>
+
+</html>

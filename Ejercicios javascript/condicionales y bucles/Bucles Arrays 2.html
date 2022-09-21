@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="font-size: 2em;">
+    <script type="text/javascript">
+        let datos = [
+            [1, 7, 9],
+            [5, 6, 8],
+            [2, 5, 9]
+        ];
+        /*
+        for (let i=0;i<3;i++){
+
+            for (let j=0;j<3;j++){
+
+                document.write(datos[i][j]+"</br>");
+            }
+        }
+
+        */
+
+        for (dato1 of datos) {
+
+            for (dato2 of dato1) {
+
+                document.write(dato2 + "</br>")
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

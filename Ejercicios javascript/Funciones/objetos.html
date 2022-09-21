@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.definir y crear objeto simple un literal 
+          var persona = {
+            nombre: "Alex",
+            apellido: "lopez",
+            dni: 480
+        };
+        //2. Definir y crear objeto con new 
+            var persona1 = new Object();
+            persona1.nombre = "cristina";
+            persona1.apellido = "lopez";
+            persona1.dni = 112313;
+
+        //3. Con constructor la más aconsejable ya que es simple 
+        function persona2 (nom, ape, dni){
+            /**this hace referencia : 
+            - Al propietario de la función que está invocando
+            - Al objeto donde la función es un método*/
+            this.nombre = nom;// este nom hace referencia al del parámetro 
+            this.ape = ape; //el this.ape, hace referencia a la variable que creamos.
+            this.dni =  dni;
+        }
+         
+        let juana = new persona2 ("juana", "lopez", 444);
+        document.write(juana.nombre+"</br>");
+        document.write(juana.ape+"</br>");
+        document.write(juana.dni+"</br>" );
+
+    function perro (razasssss, kg, ojos){
+
+        this.raza=razasssss;
+        this.kg=kg;
+        this.ojos=ojos;
+
+    }
+
+var thor = new perro("Pastor Ruso", 30, "Marrones");
+
+document.write(thor.raza+"</br>");
+document.write(thor.kg+"</br>");
+document.write(thor.ojos+"</br>")
+
+    </script>
+</body>
+
+</html>

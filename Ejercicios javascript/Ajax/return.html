@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="font-size:2em">
+    <script>
+        // Return debe de ir acompañado de una función
+        document.write("</br> Texto 1");
+        document.write("</br> Texto 2");
+
+        //El código de la función se ejecuta cuando es "invocada o llamada"
+        //El return se traduce como "te devuelvo"
+        function frases() {
+            return "</br> Texto de ejemplo 5";
+        }
+        //declaro esta función para usarla en una variable
+        function fraseResultado() {
+            return "</br> Hola papu";
+        }
+
+        document.write("</br> Texto 3");
+        document.write(" </br>Texto 4");
+        //para llamar a una función únicamente el nombre de la función con ();
+        //como la función nos lanza el return ponemos el document.write()
+        //lo recogemos de esta manera o variable
+        document.write(frases());
+        //declaro variable para imprimir la función atrapándola con la variable
+        let f = fraseResultado();
+        document.write(f+"</br>");
+
+        /*función con parámetros es como una variable
+         que funciona dentro de la función estás obligado 
+         a pasarle el valor que quieres almacenar en la llamada 
+         de la función */
+
+        function param(x){
+            return x*1000;
+        }
+         
+        //puedo declarar directamente la función 
+        document.write(param(1)+"<br>");
+
+        //puedo declarar una variable y guardar la función
+        let parametros = param(1);  
+        document.write(parametros);
+    </script>
+
+</body>
+
+</html>

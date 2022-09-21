@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link src="Stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="document.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="boton();"> Pulsar </button>
+    <script> function boton (){
+        function Vehiculo(marca, modelo, color, caballos, anio) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.caballos = caballos;
+            this.anio = anio;
+            this.mostrarDatos = function () {
+                return "Marca: " + this.marca +
+                    "</br> Modelo: " + this.modelo +
+                    "</br> Color: " + this.color +
+                    "</br> Caballos: " + this.caballos +
+                    "</br> Año: " + this.anio;
+            }
+        }
+        var coche = new Vehiculo("Mazda", "Cx-5", "verde-militar", 186, 2021);
+        document.getElementById("demo").innerHTML = coche.mostrarDatos();}
+    </script>
+
+
+</body>
+
+</html>

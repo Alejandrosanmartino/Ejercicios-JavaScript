@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="documento.js"></script>
+</head>
+
+<body>
+
+
+    <script>
+        function actualizar() {
+            var fecha = new Date();
+            var hora = fecha.getHours();
+            var min = fecha.getMinutes();
+            var sec = fecha.getSeconds();
+            document.getElementById("hora").value = hora;
+            document.getElementById("minutos").value = min;
+            document.getElementById("segundos").value = sec;
+        }
+    </script>
+    <h2>Hora actual</h2>
+    <p> hora <input type="text" size="2" id="hora"></p>
+    <p>minutos <input type="text" size="2" id="minutos"></p>
+    <p> segundos <input type="text" size="2" id="segundos"></p>
+
+    <button type="button" onclick="actualizar();">Actualizar</button>
+</body>
+
+
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*sintaxis de acceso 
+          1- objeto.propiedad
+          2- objeto["propiedad"]  
+          3- objeto[expresion]*/
+
+        let nom = {
+
+            nombre: "Juana",
+            apellido: "López",
+            dni: 754};
+           /* alert (nom.nombre);
+            alert (nom["apellido"]);
+            var expre = "dni";
+            alert (nom[expresion]);
+
+            /*recorrer propiedades objeto con bucle for (variable in objeto){
+
+            nombre_objeto [nombre_variable]}*/
+
+            for(x in nom){
+                alert (nom[x]);}
+
+            //añadir propiedad objeto nombre_objeto.propiedad = valor
+                nom.nacionalidad="españa";
+                alert(nom.nacionalidad);
+            //borrar delete nombre_objeto.nombre_propiedad
+                delete nom.apellido;
+    </script>
+</body>
+</html>

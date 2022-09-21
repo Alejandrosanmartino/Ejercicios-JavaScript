@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript"> 
+        // Crear array literal 
+        let numeros = [19,4,8,9];
+        let datos = [1.5,"true", {alto:100,ancho:300}];
+
+        let mas_datos=[[7,{color:"rojo", potencia:350}]]
+
+        // Crear array con Spread
+        let dato = [2,3,...numeros]
+
+        for (i=0;i<dato.length;i++){
+
+            document.write(dato[i]+"<br/>") }
+
+        //método constructor 
+        let n = new Array ();
+        let nombre= new Array(5); //Tendrá 5 elementos! 
+        let paises= new Array ("España", "Colombia", "Portugal");
+
+        paises.unshift("Alemania");//añade al principio
+        paises.shift();
+
+        paises.push("Francia");//añade siempre al final
+        paises.pop(); //Elimina al final!!!  
+        
+        console.log(n);
+        //Tendrá 1 elemento que valdrá 5 
+        let nom= new Array.of(5); 
+
+        let saludo="hola";
+  
+
+        let saludar = new Array.from(saludo);
+        document.write(saludar);
+
+
+            
+
+        </script>
+</body>
+</html>

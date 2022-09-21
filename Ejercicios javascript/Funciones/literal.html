@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="Stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="documento.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">aaaa</p>
+  
+    <script>
+  var persona= {
+                nombre:"Alex",
+                apellido:"López",edad:33,
+                
+                cumplirAnios:function(){
+                    this.edad=edad++;
+                    return this.edad;
+
+                }   };
+
+    document.getElementById("demo").innerHTML=persona.nombre+" con apellido " + persona.apellido + 
+    " y una edad "+ persona.edad + " este año cumplirá " + persona.cumplirAnios()
+
+
+
+    </script>
+      
+</body>
+</html>

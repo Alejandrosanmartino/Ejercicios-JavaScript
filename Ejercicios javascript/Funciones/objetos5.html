@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var persona = {
+            nombre: "juana",
+            apellido: "lopez"
+        };
+
+        document.write(persona.nombre + "</br>" + persona.apellido+"</br>"+"</br>");
+
+        //2 forma de definir un objeto con al palabra reservada new object 
+
+       var persona1 = new Object()
+       persona1.nombre= "alex";
+       persona1.apellido="lópez";
+
+       document.write(persona1.nombre +"</br>"+persona1.apellido+"</br>"+"</br>");
+
+       function persona2(nombre, apellido){
+
+        this.nom = nombre;
+        this.ape = apellido;
+       }
+       var personas = new persona2 ("cristina","lopez");
+       document.write(personas.nom+"<br>");
+       document.write(personas["ape"])
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formulario_Js.index.html" method="get">
+        <input type="name"  id="nombre"> </input>
+        <button type="button" value="submit" onclick="validar();">Pulsar</button>
+    </form>
+    <script>
+        function validar(){
+            valor = document.getElementById("nombre").value;
+
+            if(valor ==null || valor.length==0){
+                alert("campo incorrecto"); return false;
+
+            }else 
+            
+            alert("Enviado campo correcto");
+            return true;
+
+
+        }
+
+
+    </script>
+</body>
+</html>

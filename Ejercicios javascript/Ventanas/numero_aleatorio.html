@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src="stylesheet" type="text/css" href="estilos.css">
+    <script type="text/javascript" src="documento.js"></script>
+</head>
+
+<body>
+    <script>
+        function bonoloto() {
+
+            let resultado = " ";
+            let complementario = " ";
+
+            for (i = 1; i < 3; i++) {
+
+                resultado = resultado + Math.ceil (Math.random() * 49) + "";
+            }
+                complementario += Math.ceil (Math.random() * 9) + "";
+            
+                document.getElementById("num").innerHTML = "Combinación ganadora" + resultado;
+                document.getElementById("comp").innerHTML = "Numero complementario" + complementario;
+        }
+        
+    </script>
+
+    <p id="num"> </p>
+    <hr>
+    <p id="comp"> </p>
+
+    <button type="button" onclick="bonoloto();">Generar números</button>
+</body>
+
+</html>

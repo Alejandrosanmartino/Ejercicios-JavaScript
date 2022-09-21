@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+let numeros=[]
+let num_arrays=parseInt(prompt("Introduce el número de arrays"));
+
+for (let i=0 ; i<num_arrays; i++)
+
+    numeros.push(parseInt(prompt("Intrdocue el número " + numeros )))
+
+for(let i=0;i<numeros.length;i++)
+
+    document.write(i+1+". El resultado de números x 5 es: "+numeros[i] + numeros[i]*5+"</br>")
+/*
+        let numbers = []
+        let totalInputs = parseInt(prompt("Introduce la cantidad de numeros"))
+
+
+        for (let i = 0; i < totalInputs; i++)
+            numbers.push(parseInt(prompt(`Introduce el numero ${i+1} de ${totalInputs}`)))
+
+        for (let i = 0; i < numbers.length; i++)
+            document.write(`${i + 1}. El resultado de ${numbers[i]} * 5 es ${numbers[i]*5} </br>`)
+        */
+    </script>
+</body>
+
+</html>

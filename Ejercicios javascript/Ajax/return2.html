@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*va a recibir 2 parámetros */
+        function calculo(operador1, operador2) {
+            // el return hace que salga del código todo lo que venga después
+            return operador1 + operador2;
+        }
+
+        function calculo2(operador3, operador4) {
+            let resultado = operador3 + operador4;
+            document.write("se ha ejecutado la función cálculo2, ")
+            return resultado;
+        }
+
+        function calculo3(operador5, operador6) {
+
+            if (isNaN(operador5) || isNaN(operador6)) {
+                return "alguno de los valores no es numérico";
+            } //podemos prescindir del else ya que salta.
+            else {
+                return operador5 + operador6;
+            }
+
+        }
+
+        //Los argumentos van separados por ","
+        let c = calculo3(5, "gfsfsf") + "</br>";
+        document.write("El resultado es: " + (c));
+        document.write("El resultado es: " + calculo2(3, 1) + "</br>")
+    </script>
+</body>
+
+</html>

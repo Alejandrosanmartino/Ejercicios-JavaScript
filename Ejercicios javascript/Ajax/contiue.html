@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="font-size:2em;">
+    <script type="text/javascript">
+        //Primero declaro una variable con 0 trabajadores puedo poner -4 pero va a contar hasta 5 si pong -4 contará 9 trabajadores
+        //array dónde guardaremos los salarios de los trabajadores.
+        let num_trabajador = 0;
+        let salarios = [];
+        //creo un bucle while y con este bucle vamos a recorrer el número de trabajadores en este caso será de 5 trabajadores
+        while (num_trabajador < 5) {
+
+            let salario = prompt("Introduce salario del trabajador " + (num_trabajador + 1));
+            //si NO hay salario continua y vuelva a hacer el bucle la parte de abajo no la ejecuta y vuelve a pedir salario.
+            if (!salario) continue;
+
+            salarios[num_trabajador] = salario - (salario * 0.25);
+            num_trabajador += 1;
+        }
+        for (salario of salarios) {
+
+            document.write(salario + "</br>");
+
+        }
+    </script>
+</body>
+
+</html>

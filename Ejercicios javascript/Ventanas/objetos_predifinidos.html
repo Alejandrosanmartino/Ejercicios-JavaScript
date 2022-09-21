@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    <!--Examen-->
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+// El objeto window define la ventana del navegador
+// El objeto Document es el documento html que se visualiza en la ventana del navegador
+// El objeto Location contiene la información de la url que se está mostrando en la ventana del navegador
+// El objeto History guarda los sitios visitados es como el historial del navegador.
+// El objeto navigator hacer referencia al navegador que se está utilizando para mostrar el documento html.
+
+//Left a qué distancia del margen izquierdo 
+//Top a qué distancia del borde del navegador por la perte superior
+//width ancho de la ventana
+//height altura de la ventana
+
+// var propiedades = "left=100, top=50, width=500, height=400";
+// window.open("http://www.foc.es","FOC",propiedades);
+
+document.getElementById("demo").innerHTML ="La localización es  " + window.location;
+document.write("</br>")
+document.getElementById("demo1").innerHTML =navigator.platform;
+document.getElementById("demo2").innerHTML =navigatorCookies;
+</script>
+
+
+</body>
+</html>

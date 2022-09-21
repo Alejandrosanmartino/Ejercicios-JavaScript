@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+
+//finIndex(); nos devuelve el índice del elemento que estemos buscando
+let edades =[35,15,20,45,87,50,40,20,11,69,88];
+//podemos preguntar en qué indice se encuentra Pedro por ejemplo sería el 2
+let nombres =["Ana", "Juan","Pedro", "María", "Juan"];
+// devuelve el primero! 
+document.write(nombres.findIndex(encontrar=>encontrar=="Pedro")+"</br>");
+document.write(edades.findIndex(encontrar=>35)+"</br>");
+document.write(edades.findIndex(encontrar=>encontrar<20)+"</br>");
+
+//find ();
+document.write(edades.find(encontrar=>encontrar%2==0)+"</br>");
+document.write(nombres.find(encontrar=>encontrar.charAt(0)=="J")+"</br>");
+document.write(nombres.find(encontrar=>encontrar.charAt(encontrar.length-1)=="o")+"</br>");
+
+//every() todos nos devuelve true o false si todos cumplen una condición si solo 1 no cumple devuelve false;
+document.write(edades.every(menores=>menores<100)+"</br>");//true
+document.write(edades.every(menores=>menores<20)+"</br>");//false
+
+//some() algunos cumplen la condición;
+document.write(edades.some(menores=>menores<100)+"</br>");//true
+
+//En este caso devolvería el else 
+if (document.write(nombres.some(primera_letra=>primera_letra.charAt(0)=="j")+"</br>")){
+
+    document.write ("Sí que hay un elemento que cumple y empieza por jota");
+}else {
+    document.write("no cumple condición");
+}
+
+
+    </script>
+    
+</body>
+</html>
